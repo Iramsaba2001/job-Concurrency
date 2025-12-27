@@ -16,8 +16,10 @@ jobs:
    - name: Checkout Repository
      uses: actions/checkout@v6.0.1
    - name: Install Depdencies
-     run: npm i
+     working-directory:  my-next-app
+     run: npm install
    - name: Build Next.js App
+     working-directory:  my-next-app
      run: npm run build
    - name: Deploy App
      run: echo "Deploying App...."
