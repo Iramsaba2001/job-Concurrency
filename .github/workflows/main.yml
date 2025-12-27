@@ -16,7 +16,7 @@ jobs:
    - name: Checkout Repository
      uses: actions/checkout@v6.0.1
    - name: Install Depdencies
-     run: npm ci
+     run: npm i
    - name: Build Next.js App
      run: npm run build
    - name: Deploy App
